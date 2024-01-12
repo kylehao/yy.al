@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge; chrome=1" />
+<meta name="description" content="JavaScript desktop environment built with jQuery." />
+<title>在线模拟系统桌面特效</title>
+<!--[if lt IE 7]>
+<script>
+window.top.location = 'http://desktop.sonspring.com/ie.html';
+</script>
+<![endif]-->
+<link rel="stylesheet" href="assets/stylesheets/html.css" />
+<link rel="stylesheet" href="assets/stylesheets/desktop.css" />
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="assets/stylesheets/ie.css" />
+<![endif]-->
+</head>
+<body>
+<div class="abs" id="wrapper">
+  <div class="abs" id="desktop"> 
+	<a class="abs icon" style="left:20px;top:20px;" href="#icon_dock_computer"> <img src="assets/images/icons/icon_32_computer.png" /> Cloud Drive </a> 
+	<a class="abs icon" style="left:20px;top:100px;" href="#icon_dock_drive"> <img src="assets/images/icons/icon_32_drive.png" /> Link </a> 
+	<a class="abs icon" style="left:20px;top:180px;" href="#icon_dock_disc"> <img src="assets/images/icons/icon_32_disc.png" /> Website </a> 
+	<a class="abs icon" style="left:20px;top:260px;" href="#icon_dock_network"> <img src="assets/images/icons/icon_32_network.png" /> Blog </a> 
+	
+	
+    <div id="window_computer" class="abs window">
+      <div class="abs window_inner">
+        <div class="window_top"> <span class="float_left"> <img src="assets/images/icons/icon_16_computer.png" /> Cloud Drive </span> <span class="float_right"> <a href="#" class="window_min"></a> <a href="#" class="window_resize"></a> <a href="#icon_dock_computer" class="window_close"></a> </span> </div>
+        <div class="abs window_content">
+          <div class="window_aside"> Hello. You look nice today! </div>
+          <div class="window_main">
+            <table class="data">
+              <thead>
+                <tr>
+                  <th class="shrink">&nbsp; </th>
+                  <th> Name </th>
+                  <th> Program </th>
+                  <th> Server </th>
+                  <th> Location </th>
+                </tr>
+              </thead>
+              <tbody>
+			  
+			  
+			  <!-- Omanager部分 -->
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_drive.png" /> </td>
+                  <td> <a href="http://cloud.2345.ltd">Cloud.2345.ltd </a></td>
+                  <td> Omanager </td>
+                  <td> Tencent </td>
+                  <td> HK </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_disc.png" /> </td>
+                  <td> <a href="http://worker.444.info">Worker.444.info </a></td>
+                  <td> Omanager </td>
+                  <td> Cloudflare Workers</td>
+                  <td> USA </td>
+                </tr>
+                 <tr>
+                  <td><img src="assets/images/icons/icon_16_network.png" /> </td>
+                  <td> <a href="https://vercel.444.info/">Vercel.444.info </a></td>
+                  <td> Omanager </td>
+                  <td> Vercel </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_folder_remote.png" /> </td>
+                  <td> <a href="https://glitch.444.info/">Glitch.444.info </a></td>
+                  <td> Omanager </td>
+                  <td> Glitch </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_documents.png" /> </td>
+                  <td> <a href="https://repl.444.info/">Repl.444.info </a></td>
+                  <td> Omanager </td>
+                  <td> Glitch </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_system.png" /> </td>
+                  <td> <a href="https://pan.11.wf/">Pan.11.wf </a></td>
+                  <td> Omanager </td>
+                  <td> RN 3.5G </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_trash.png" /> </td>
+                  <td> <a href="http://free163.dothome.co.kr/">Dothome.co.kr </a></td>
+                  <td> Omanager </td>
+                  <td> Dothome.co.kr </td>
+                  <td> KR </td>
+                </tr>
+				
+				
+				<!-- Onepoint部分 -->
+				<tr>
+                  <td><img src="assets/images/icons/icon_16_drive.png" /> </td>
+                  <td> <a href="https://disk.444.info/">Disk.444.info </a></td>
+                  <td> Onepoint </td>
+                  <td> Cloudflare Workers </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_disc.png" /> </td>
+                  <td> <a href="https://pan.4567.eu.org/">4567.eu.org </a></td>
+                  <td> Onepoint </td>
+                  <td> Cloudflare Workers </td>
+                  <td> USA </td>
+                </tr>
+				
+				
+				<!-- Alist部分 -->
+                 <tr>
+                  <td><img src="assets/images/icons/icon_16_network.png" /> </td>
+                  <td> <a href="http://pan.660000.xyz/">Pan.660000.xyz </a></td>
+                  <td> Alist </td>
+                  <td> RN 3.5G </td>
+                  <td> USA </td>
+                </tr>
+				
+				<!-- Alist部分 -->
+                 <tr>
+                  <td><img src="assets/images/icons/icon_16_network.png" /> </td>
+                  <td> <a href="http://kylehao.ysepan.com/">文件分享 </a></td>
+                  <td> YS168 </td>
+                  <td> YS168 </td>
+                  <td> CN </td>
+                </tr>
+				
+				
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="abs window_bottom"> Build: 听松阁 </div>
+      </div>
+      <span class="abs ui-resizable-handle ui-resizable-se"></span> </div>
+    <div id="window_drive" class="abs window">
+      <div class="abs window_inner">
+        <div class="window_top"> <span class="float_left"> <img src="assets/images/icons/icon_16_drive.png" /> Link </span> <span class="float_right"> <a href="#" class="window_min"></a> <a href="#" class="window_resize"></a> <a href="#icon_dock_drive" class="window_close"></a> </span> </div>
+        <div class="abs window_content">
+          <div class="window_aside"> 网址导航: x5 </div>
+          <div class="window_main">
+            <table class="data">
+              <thead>
+                <tr>
+                  <th class="shrink">&nbsp; </th>
+                  <th> Name </th>
+                  <th> Description </th>
+                  <th> Server </th>
+                  <th> Location </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_page.png" /> </td>
+                  <td> <a href="http://2345.ltd/">2345.ltd </a></td>
+                  <td> Window 1 </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_folder_home.png" /> </td>
+                  <td> <a href="https://www.666.vin/">666.vin </a></td>
+                  <td> Window 2 </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_folder.png" /> </td>
+                  <td> <a href="https://www.asia.cx/">Asia.cx </a></td>
+                  <td> Window 3 </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_folder.png" /> </td>
+                  <td> <a href="https://www.2345.pw/">2345.pw </a></td>
+                  <td> Window 4 </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_folder.png" /> </td>
+                  <td> <a href="https://www.444.gs/">444.gs </a></td>
+                  <td> Window 5 </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_folder.png" /> </td>
+                  <td> <a href="https://www.uuu.gs/">uuu.gs </a></td>
+                  <td> Window 6 </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+				<tr>
+                  <td><img src="assets/images/icons/icon_16_page.png" /> </td>
+                  <td> <a href="https://www.777.wf/">777.wf </a></td>
+                  <td> Window 7 </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_folder_home.png" /> </td>
+                  <td> <a href="http://4y.gs/">4y.gs </a></td>
+                  <td> Window With Music 1 </td>
+                  <td> Github </td>
+                  <td> USA </td>
+				 <tr>
+                  <td><img src="assets/images/icons/icon_16_folder.png" /> </td>
+                  <td> <a href="https://www.9b9.net/">9b9.net </a></td>
+                  <td> Window With Music 2 </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_folder.png" /> </td>
+                  <td> <a href="http://ffff.life/">ffff.life </a></td>
+                  <td> Apple OS </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_folder.png" /> </td>
+                  <td> <a href="https://www.999999.ltd/">999999.ltd </a></td>
+                  <td> Window OS </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_folder.png" /> </td>
+                  <td> <a href="https://www.444.info/">444.info </a></td>
+                  <td> Personal List </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+				<tr>
+                  <td><img src="assets/images/icons/icon_16_folder.png" /> </td>
+                  <td> <a href="https://game.444.info/">Game.444.info </a></td>
+                  <td> Game List </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+				<tr>
+                  <td><img src="assets/images/icons/icon_16_folder.png" /> </td>
+                  <td> <a href="https://www.222.ac.cn/">222.ac.cn </a></td>
+                  <td> 表白代码收藏馆 </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+				<tr>
+                  <td><img src="assets/images/icons/icon_16_folder.png" /> </td>
+                  <td> <a href="http://kkkk.info/">kkkk.info </a></td>
+                  <td> Domain List </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+				<tr>
+                  <td><img src="assets/images/icons/icon_16_folder.png" /> </td>
+                  <td> <a href="http://kkk.cx/">kkk.cx </a></td>
+                  <td> Domain List </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="abs window_bottom"> Build: 听松阁 </div>
+      </div>
+      <span class="abs ui-resizable-handle ui-resizable-se"></span> </div>
+    <div id="window_disc" class="abs window">
+      <div class="abs window_inner">
+        <div class="window_top"> <span class="float_left"> <img src="assets/images/icons/icon_16_disc.png" /> Website </span> <span class="float_right"> <a href="#" class="window_min"></a> <a href="#" class="window_resize"></a> <a href="#icon_dock_disc" class="window_close"></a> </span> </div>
+        <div class="abs window_content">
+          <div class="window_aside align_center"> <img src="assets/images/misc/album_cover.jpg" /> <br />
+            <em>Static Website</em> </div>
+          <div class="window_main">
+            <table class="data">
+              <thead>
+                <tr>
+                  <th class="shrink">&nbsp; </th>
+                  <th> Name </th>
+                  <th> Description </th>
+                  <th> Server </th>
+                  <th> Location </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_music.png" /> </td>
+                  <td> <a href="https://www.u7u.net/">u7u.net </a></td>
+                  <td> Music Share </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_music.png" /> </td>
+                  <td> <a href="http://odj.cc/">odj.cc </a></td>
+                  <td> Music Share </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_music.png" /> </td>
+                  <td> <a href="http://www.115511.xyz/">115511.xyz </a></td>
+                  <td> Kugou Music </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_music.png" /> </td>
+                  <td> <a href="http://44444.ltd">44444.ltd </a></td>
+                  <td> 德云社 </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_music.png" /> </td>
+                  <td> <a href="https://www.book.ga/">Book.ga </a></td>
+                  <td> 武侠 </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_music.png" /> </td>
+                  <td> <a href="https://www.0kk.net/">0kk.net </a></td>
+                  <td> 小说 </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_music.png" /> </td>
+                  <td> <a href="https://www.free163.com/">Free163.com </a></td>
+                  <td> 古典诗词 </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_music.png" /> </td>
+                  <td> <a href="http://vip.2345.ltd/">Vip.2345.ltd </a></td>
+                  <td> VIP视频解析 </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_music.png" /> </td>
+                  <td> <a href="http://116611.xyz/">116611.xyz </a></td>
+                  <td> MTV在线 </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_music.png" /> </td>
+                  <td> <a href="http://pu.cx/">Pu.cx </a></td>
+                  <td> 邮局 </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_music.png" /> </td>
+                  <td> <a href="http://772222.xyz/">772222.xyz </a></td>
+                  <td> Photo相册 </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+				<tr>
+                  <td><img src="assets/images/icons/icon_16_music.png" /> </td>
+                  <td> <a href="http://free.444.info/">免费空间 </a></td>
+                  <td> 免费空间 </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+				
+				
+				
+				
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_music.png" /> </td>
+                  <td> <a href="https://pic.cloud.eu.org/">cloud.eu.org </a></td>
+                  <td> Photo4you </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td class="shrink"><img src="assets/images/icons/icon_16_music.png" /> </td>
+                  <td> <a href="https://img.4567.eu.org/">4567.eu.org </a></td>
+                  <td> Telegraph-Image </td>
+                  <td> Cloudflare Workers </td>
+                  <td> USA </td>
+                </tr>
+				
+				
+				<tr>
+                  <td><img src="assets/images/icons/icon_16_music.png" /> </td>
+                  <td> <a href="https://markdown.444.info/">Markdown.444.info </a></td>
+                  <td> Markdown Editer </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_music.png" /> </td>
+                  <td> <a href="http://tools.444.info/fj/">繁简转换 </a></td>
+                  <td> 繁简转换 </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_music.png" /> </td>
+                  <td> <a href="http://tools.444.info/dx/">大小写转换 </a></td>
+                  <td> 大小写转换 </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td class="shrink"><img src="assets/images/icons/icon_16_music.png" /> </td>
+                  <td> <a href="http://tools.444.info/relationship/">亲戚关系计算器 </a></td>
+                  <td> 亲戚关系计算器 </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+				<tr>
+                  <td class="shrink"><img src="assets/images/icons/icon_16_music.png" /> </td>
+                  <td> <a href="https://proxy.4567.eu.org/">在线代理 </a></td>
+                  <td> 在线代理 </td>
+                  <td> Cloudflare Workers </td>
+                  <td> USA </td>
+                </tr>
+				
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="abs window_bottom"> Genre: Rock/Rap </div>
+      </div>
+      <span class="abs ui-resizable-handle ui-resizable-se"></span> </div>
+    <div id="window_network" class="abs window">
+      <div class="abs window_inner">
+        <div class="window_top"> <span class="float_left"> <img src="assets/images/icons/icon_16_network.png" /> Blog </span> <span class="float_right"> <a href="#" class="window_min"></a> <a href="#" class="window_resize"></a> <a href="#icon_dock_network" class="window_close"></a> </span> </div>
+        <div class="abs window_content">
+          <div class="window_aside"> Local Network Resources </div>
+          <div class="window_main">
+            <table class="data">
+              <thead>
+                <tr>
+                  <th class="shrink">&nbsp; </th>
+                  <th> Name </th>
+                  <th> Description </th>
+                  <th> Server </th>
+                  <th> Location </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_server.png" /> </td>
+                  <td> <a href="http://blog.444.info/">Blog.444.info </a></td>
+                  <td> 博客 </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_folder_remote.png" /> </td>
+                  <td> <a href="http://skycz.com/">Skycz.com </a></td>
+                  <td> 博客 </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_vpn.png" /> </td>
+                  <td> <a href="http://skywq.com/">Skywq.com </a></td>
+                  <td> 建站资源 </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_computer.png" /> </td>
+                  <td> <a href="http://free345.com/">Free345.com </a></td>
+                  <td> 建站资源 </td>
+                  <td> Github </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_computer.png" /> </td>
+                  <td> <a href="https://blog.11.wf/">Blog.11.wf </a></td>
+                  <td> Notion博客 </td>
+                  <td> Notion </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_computer.png" /> </td>
+                  <td> <a href="https://list.11.wf/">List.11.wf </a></td>
+                  <td> Notion博客 </td>
+                  <td> Notion </td>
+                  <td> USA </td>
+                </tr>
+                <tr>
+                  <td><img src="assets/images/icons/icon_16_computer.png" /> </td>
+                  <td> <a href="http://kylehao.lofter.com/">Lofter </a></td>
+                  <td> Lofter博客 </td>
+                  <td> Lofter </td>
+                  <td> USA </td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="abs window_bottom"> LAN: Corporate Intranet </div>
+      </div>
+      <span class="abs ui-resizable-handle ui-resizable-se"></span> </div>
+  </div>
+  <div class="abs" id="bar_top"> <span class="float_right" id="clock"></span>
+    <ul>
+      <li> <a class="menu_trigger" href="#">jQuery Desktop</a>
+        <ul class="menu">
+          <li> <a href="http://www.444.info">jQuery Cookbook</a> </li>
+          <li> <a href="http://www.444.info">jQuery Enlightenment</a> </li>
+          <li> <a href="http://www.444.info/">jQuery Home</a> </li>
+          <li> <a href="http://www.444.info">jQuery Mobile</a> </li>
+          <li> <a href="http://www.444.info">jQuery UI</a> </li>
+          <li> <a href="http://www.444.info/">Learning jQuery</a> </li>
+        </ul>
+      </li>
+      <li> <a class="menu_trigger" href="#">HTML5 Resources</a>
+        <ul class="menu">
+          <li> <a href="http://www.444.info">Dive Into HTML5</a> </li>
+          <li> <a href="http://www.444.info/">Get Ready for HTML5</a> </li>
+          <li> <a href="http://www.444.info/">HTML5 Boilerplate</a> </li>
+          <li> <a href="http://www.444.info">HTML5 Doctor</a> </li>
+          <li> <a href="http://www.444.info/">HTML5 Intro</a> </li>
+          <li> <a href="http://www.444.info/">HTML5 Super Friends</a> </li>
+        </ul>
+      </li>
+      <li> <a class="menu_trigger" href="#">Code</a>
+        <ul class="menu">
+          <li> <a href="assets/stylesheets/desktop.css">Desktop - CSS</a> </li>
+          <li> <a href="assets/javascripts/jquery.desktop.js">Desktop - JavaScript</a> </li>
+          <li> <a href="http://www.444.info">GitHub Repository</a> </li>
+        </ul>
+      </li>
+      <li> <a class="menu_trigger" href="#">Credits</a>
+        <ul class="menu">
+          <li> <a href="http://www.444.info">Demo built by Nathan Smith</a> </li>
+          <li> <a href="http://www.444.info/">Wallpaper by Adrian Rodriguez</a> </li>
+          <li> <a href="http://www.444.info">Icons - Tango Desktop Project</a> </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="abs" id="bar_bottom"> <a class="float_left" href="#" id="show_desktop" title="Show Desktop"> <img src="assets/images/icons/icon_22_desktop.png" /> </a>
+    <ul id="dock">
+      <li id="icon_dock_computer"> <a href="#window_computer"> <img src="assets/images/icons/icon_22_computer.png" /> Computer </a> </li>
+      <li id="icon_dock_drive"> <a href="#window_drive"> <img src="assets/images/icons/icon_22_drive.png" /> Hard Drive </a> </li>
+      <li id="icon_dock_disc"> <a href="#window_disc"> <img src="assets/images/icons/icon_22_disc.png" /> Audio CD </a> </li>
+      <li id="icon_dock_network"> <a href="#window_network"> <img src="assets/images/icons/icon_22_network.png" /> Network </a> </li>
+	  
+    </ul>
+    <a class="float_right" href="http://www.444.info/?ref=spon_nsmith_desktop-sonspring" title="Secure Hosting"> <img src="assets/images/misc/firehost.png" /> </a> 
+    
+    </div>
+</div>
+
+<script src="assets/javascripts/jquery.js"></script>
+<script src="assets/javascripts/jquery.ui.js"></script>
+<script src="assets/javascripts/jquery.desktop.js"></script>
+</body>
+</html>

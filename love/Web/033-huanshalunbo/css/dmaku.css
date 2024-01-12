@@ -1,0 +1,30 @@
+/****************************************************************
+ *																*		
+ * 						      代码库							*
+ *                        www.dmaku.com							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+****************************************************************/
+*{ margin:0; padding:0; -webkit-text-size-adjust:none;border:0;list-style:none;}
+body{overflow-x:hidden;background:#fff}
+.fl,.fr{ float:left; display:inline;}
+.fr{ float:right;}
+.lifl li{ float:left;}
+.scroll{ position:relative; overflow:hidden;}
+.scroll ul{ position:absolute; width:20000em;}
+.scroll ul li{ float:left;}
+.wrap{ width:976px; margin:0 auto;}
+.header .wrap{ height:629px; position:relative;}
+.bpic,.header ins.nm{ position:absolute; top:0; left:50%; margin-left:-960px; width:1920px; text-align:center;}
+.header ins.nm{ height:89px; background-color:#218723; top:540px; filter:alpha(opacity=60); opacity:0.6;}
+.b1{ width:900px; height:66px; position:absolute; top:553px; left:37px; z-index:1;}
+.b1 li,.b1 li ins{ width:145px; height:66px; position:relative;}
+.b1 li{ margin-right:6px; cursor:pointer;}
+.b1 li div{ display:none;}
+.b1 li img{ border:5px solid #fff; width:135px; height:56px;}
+.b1 li.active img{ border:none; width:129px; margin:8px; height:50px;}
+.b1 li.active ins{ background:url(../images/ico_2.gif) no-repeat; position:absolute; display:block; top:0; left:0; filter:alpha(opacity=47); opacity:0.47;}
+a.arr_l,a.arr_r{ background:url(../images/arr.png) no-repeat; width:24px; height:24px; display:block; position:absolute; top:571px; left:10px; z-index:1; cursor:pointer;}
+a.arr_r{ left:943px; background-position:right 0;}
+a.arr_l:hover,ul.page li a.p:hover,a.pv:hover{ background-position:0 bottom;}
+a.arr_r:hover,ul.page li a.n:hover,a.nv:hover{ background-position:right bottom;}

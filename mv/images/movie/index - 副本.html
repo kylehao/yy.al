@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery自定义视频播放器特效 - 站长素材</title>
+
+<link rel="stylesheet" type="text/css" href="css/Basc.css">
+<link rel="stylesheet" type="text/css" href="css/video.css">
+<style type="text/css">
+	.xh_main{width: 1170px;margin: 0 auto;position: relative;}
+	.padt100{padding-top: 1px;}
+	@media only screen and (max-width:1200px){
+		.xh_main{width: 100%;}
+	}
+</style>
+
+</head>
+<body>
+
+<div class="xh_main padt100" style="z-index: 9;">
+	<div class="video-wrap">
+		<!--视频-->
+		<video class="video" poster="images/video.png">
+			<source src="http://music.asia.ga/OnedriveTJ/%E9%9F%B3%E4%B9%90MV/%E9%9F%A9%E5%9B%BDMTV/As%20One%20-%20Jingle%20Bell%20Rocks.wmv" type="video/mp4"></source>
+		</video>
+		
+		<!--控制条-->
+		<div class="video-controls">
+			<!--控制条背景-->
+			<div class="video-controls-bg"></div>
+			<!--进度条-->
+			<div class="loading-line">
+				<em class="loading_em"></em>
+				<span class="loading_span"></span>
+			</div>
+			<!--播放/暂停-->
+			<div class="video-btn"></div>
+			<!--播放进度-->
+			<div class="video-time">
+				<span class="video-now">00:00</span>
+				/
+				<span class="video-count">00:00</span>
+			</div>
+			<!--全屏-->
+			<div data-videofull='false' class="video-fullscreen"></div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/video.js"></script>
+<script type="text/javascript">
+$(function(event){
+	new myVideo(event,$(".video-wrap"));
+})
+</script>
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>适用浏览器：360、FireFox、Chrome、Opera、傲游、搜狗、世界之窗. 不支持Safari、IE8及以下浏览器。</p>
+<p>来源：<a href="http://sc.chinaz.com/" target="_blank">站长素材</a></p>
+</div>
+</body>
+</html>

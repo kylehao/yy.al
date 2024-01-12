@@ -1,0 +1,72 @@
+A:link {
+	COLOR: #000000; FONT-FAMILY: "宋体", "Arial", "Times New Roman"; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #000000; FONT-FAMILY: "宋体", "Arial", "Times New Roman"; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #b52525; FONT-FAMILY: "宋体", "Arial", "Times New Roman"; TEXT-DECORATION: underline
+}
+.9ft {
+	FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-FAMILY: "宋体"; TEXT-DECORATION: none
+}
+.11ft {
+	FONT-SIZE: 10.5pt; FONT-STYLE: normal; FONT-FAMILY: "宋体"; TEXT-DECORATION: none
+}
+.12ft {
+	FONT-SIZE: 12pt; FONT-STYLE: normal; FONT-FAMILY: "宋体"; TEXT-DECORATION: none
+}
+.eng {
+	FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none
+}
+TABLE {
+	FONT: 9pt "宋体"; TEXT-TRANSFORM: none
+}
+TD {
+	FONT: 9pt "宋体"; TEXT-TRANSFORM: none
+}
+BR {
+	FONT: 9pt "宋体"; TEXT-TRANSFORM: none
+}
+HR {
+	COLOR: #99cc66
+}
+BODY {
+	FONT-SIZE: 9pt; FONT-FAMILY: "宋体";
+}
+SELECT {
+	FONT-SIZE: 9pt; FONT-FAMILY: "宋体"
+}
+OPTION {
+	FONT-SIZE: 9pt; FONT-FAMILY: "宋体"
+}
+INPUT {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 9pt; BORDER-LEFT-COLOR: black; BORDER-BOTTOM-WIDTH: 1px; BORDER-BOTTOM-COLOR: black; BORDER-TOP-COLOR: black; FONT-FAMILY: "宋体"; BORDER-RIGHT-WIDTH: 1px; BORDER-RIGHT-COLOR: black
+}
+TEXTAREA {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid; FONT-FAMILY: "宋体"; BACKGROUND-COLOR: #ffffff
+}
+checkbox {
+	FONT-SIZE: 9pt; FONT-FAMILY: "宋体"
+}
+BUTTON {
+	FONT-SIZE: 9pt; FONT-FAMILY: "宋体"
+}
+.GridStyle {
+	BORDER-RIGHT: rgb(0,0,0) 1px solid; BORDER-TOP: rgb(255,255,255) 1px solid; BORDER-LEFT: rgb(255,255,255) 1px solid; COLOR: rgb(0,0,0); BORDER-BOTTOM: rgb(0,0,0) 1px solid; BACKGROUND-COLOR: rgb(192,192,192)
+}
+.PageStyle {
+	COLOR: #ffffff; BACKGROUND-COLOR: #475dee
+}
+.BbsMenuStyle {
+	COLOR: #000000; BACKGROUND-COLOR: #ffffff
+}
+.PageMenuStyle {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; BACKGROUND-IMAGE: url(Newimage/bgtop.jpg); BORDER-LEFT: medium none; COLOR: #ffffff; BORDER-BOTTOM: medium none; BACKGROUND-COLOR: #bc854c
+}
+.InputEnable {
+	BACKGROUND-COLOR: rgb(255,255,255)
+}
+.InputDisable {
+	BACKGROUND-COLOR: #e3ffcc
+}

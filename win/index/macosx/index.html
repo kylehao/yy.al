@@ -1,0 +1,430 @@
+﻿<!doctype html>
+<html>
+  
+  <head>
+    <title>仿MacOS X桌面菜单jQuery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <link rel="stylesheet" href="core/dockmenu.css">
+    <script src="core/jquery-1.10.2.min.js"></script>
+	<script src="core/dockmenu.min.js"></script>
+	<style>
+		html, body{ margin:0; padding:0; background: url(grey_wash_wall.png)}
+		.row label
+		{ 
+			color: #999;
+			margin: 0 0 5px 0;
+			padding: 0;
+			line-height: 30px;
+			font-size: 13px;
+			font-weight: normal;	
+		}
+		.menu{ padding: 10px; background: #303030; position: absolute; top: 0; left: 0; color: #fff; width: 315px; }
+		.menu input, .menu select
+		{
+			background: rgba(0, 0, 0, 0.6);
+			border: 1px solid #FFF;
+			color: #FFF;
+			padding: 2px 5px;
+			width: 100px;
+			float: right;
+			margin-left: 10px; 
+		}
+		.close
+		{
+			position: absolute;
+			right: -25px;
+			background: #303030;
+			width: 50px;
+			text-align: right;
+			padding: 2px 10px 3px 0;
+			cursor: pointer;
+		}
+	</style>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#wrapper1').dockmenu({
+          buttons: [{
+            'title': 'Settings',
+            'href': 'http://cloud.2345.ltd',
+            'imgURL': 'icons/Settings.png',
+            'onClick': function(){
+                              alert('You clicked on the Settings icon');
+                            }
+          },{
+            'title': 'App Store',
+            'href': 'http://pan.2345.ltd',
+            'imgURL': 'icons/AppStore.png',
+        
+          },{
+            'title': 'Camera',
+            'href': 'http://772222.xyz',
+            'imgURL': 'icons/Camera.png',
+        
+          },{
+            'title': 'Games',
+            'href': 'http://game.444.info',
+            'imgURL': 'icons/Games.png',
+        
+          },{
+            'title': 'Mail',
+            'href': 'http://mail.pu.cx',
+            'imgURL': 'icons/Mail.png',
+        
+          },{
+            'title': 'Music',
+            'href': 'http://odj.cc',
+            'imgURL': 'icons/Music.png',
+			      'onClick': function(){
+                              alert('You clicked on the Music icon');
+                            }
+          },{
+            'title': 'Safari',
+            'href': 'http://blog.444.info',
+            'imgURL': 'icons/Safari.png',
+        
+          },{
+            'title': 'Photos',
+            'href': 'http://660000.xyz',
+            'imgURL': 'icons/Photos.png',
+        
+          }]
+      
+        });
+		
+		$('.close').on('click', function()
+		{
+			if( $('.menu').position().left === 0 )
+			{
+				$('.menu').animate({'left':'-335px'}, 1000);
+				$(this).html('>');
+			}
+			else
+			{
+				$('.menu').animate({'left':'0'}, 1000);
+				$(this).html('x');
+			}
+		});
+      });
+	  
+	  function recreate()
+	  {
+		var width = $('#width').val(),
+		position = $('#position option:selected').val(),
+		menuposition = $('#menuposition option:selected').val(),
+		top = $('#top').val(),
+		bottom = $('#bottom').val(),
+		left = $('#left').val(),
+		right = $('#right').val(),
+		margin = $('#margin').val().split(','),
+		padding = $('#padding').val().split(','),
+		showBoard = $('#showBoard').val();
+		
+		$('#wrapper1').empty();
+		
+		$('#wrapper1').dockmenu({
+			width: width,
+			position: position,
+			menuPosition: menuposition,
+			top: top,
+			bottom: bottom,
+			left: left,
+			right: right,
+			margin: margin,
+			padding: padding,
+			showBoard:  $('#showBoard').is(':checked'),
+          buttons: [{
+            'title': 'Settings',
+            'href': '#settings',
+            'imgURL': 'icons/Settings.png',
+            'onClick': function(){
+                              alert('You clicked on the Settings icon');
+                            }
+          },{
+            'title': 'App Store',
+            'href': '#AppStore',
+            'imgURL': 'icons/AppStore.png',
+        
+          },{
+            'title': 'Camera',
+            'href': '#camera',
+            'imgURL': 'icons/Camera.png',
+        
+          },{
+            'title': 'Games',
+            'href': '#Games',
+            'imgURL': 'icons/Games.png',
+        
+          },{
+            'title': 'Mail',
+            'href': '#Mail',
+            'imgURL': 'icons/Mail.png',
+        
+          },{
+            'title': 'Music',
+            'href': '#Music',
+            'imgURL': 'icons/Music.png',
+			'onClick': function(){
+                              alert('You clicked on the Music icon');
+                            }
+          },{
+            'title': 'Safari',
+            'href': '#Safari',
+            'imgURL': 'icons/Safari.png',
+        
+          },{
+            'title': 'Photos',
+            'href': '#Photos',
+            'imgURL': 'icons/Photos.png',
+        
+          }]
+      
+        });
+	  }
+    </script>
+    
+<style type="text/css">
+.wrapper{ margin:0px auto; padding:20px; border:1px solid #CCC; background:#333; width:980px; font-size:12px;}
+</style>
+<link rel="shortcut icon" type="image/x-icon" href="img/an.ico"/>
+		<style type="text/css">
+			/*样式初始化*/
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			/*去除横向滚动条*/
+			body {
+				overflow-x: hidden;
+				overflow-y: hidden;
+				background-color: 000;
+				font-size:13px;
+				color: #ffffff;
+			}
+			/*将div铺满整个窗口*/
+			.box {
+				height: 100vh;
+				min-height: 520px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+background-color: 000;
+			}
+			/*设置大ul的大小及定位*/
+			.content {
+				position: relative;
+				width: 100%;
+				height: 100%;
+background-color: 000;
+			}
+			/*设置大li样式*/
+			.content li {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+
+		</style>
+  </head>
+  
+  <body>
+  
+
+
+<!-- 代码 开始 -->
+<div class="fish" style="position:absolute; width:1350px; height:500px; z-index:1; left: 20px; top: 40px;backgroud-color:000;">
+<table>
+	
+	<!-- 第1行 -->
+    <tr>
+     <td align="center" width="60"><a href="http://cloud.2345.ltd/" target="_blank"><img name="folder" src="https://jihulab.com/free163/9b9net/-/raw/e6bc35f51dbf4ce8bddb31c925f90b4c34c82111/computer/folder.gif" width="50" height="50" border="0" id="index_r2_c2" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://772222.xyz/" target="_blank"><img name="pictures" src="https://jihulab.com/free163/9b9net/-/raw/e6bc35f51dbf4ce8bddb31c925f90b4c34c82111/computer/pictures.gif" width="50" height="50" border="0" id="index_r2_c4" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://vip.2345.ltd/" target="_blank"><img name="vip" src="https://jihulab.com/free163/9b9net/-/raw/e6bc35f51dbf4ce8bddb31c925f90b4c34c82111/computer/vip.gif" width="50" height="50" border="0" id="index_r2_c6" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://down.444.info/" target="_blank"><img name="vip" src="https://jihulab.com/free163/9b9net/-/raw/e6bc35f51dbf4ce8bddb31c925f90b4c34c82111/computer/down.gif" width="50" height="50" border="0" id="index_r2_c6" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"></td>
+     <td width="20"></td>
+     <td align="center" width="60"></td>
+    </tr>
+    <tr>
+     <td align="center" width="60">我的文档</td>
+     <td width="20"></td>
+     <td align="center" width="60">我的相册</td>
+     <td width="20"></td>
+     <td align="center" width="60">视频解析</td>
+     <td width="20"></td>
+     <td align="center" width="60">软件分享</td>
+     <td width="20"></td>
+     <td align="center" width="60"></td>
+     <td width="20"></td>
+     <td align="center" width="60"></td>
+    </tr>
+    <tr>
+     <td>&nbsp;</td>
+    </tr>
+    
+<!-- 第2行 -->   
+    <tr>
+     <td align="center" width="60"><a href="http://pan.2345.ltd/" target="_blank"><img name="computer" src="https://jihulab.com/free163/9b9net/-/raw/e6bc35f51dbf4ce8bddb31c925f90b4c34c82111/computer/computer.gif" width="50" height="50" border="0" id="index_r5_c2" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://www.free163.com/" target="_blank"><img name="poem" src="https://jihulab.com/free163/9b9net/-/raw/e6bc35f51dbf4ce8bddb31c925f90b4c34c82111/computer/poem.gif" width="50" height="50" border="0" id="index_r5_c6" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://www.odj.cc" target="_blank"><img name="music" src="https://jihulab.com/free163/9b9net/-/raw/e6bc35f51dbf4ce8bddb31c925f90b4c34c82111/computer/lxyy.gif" width="50" height="50" border="0" id="index_r11_c2" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://game.444.info/" target="_blank"><img name="vip" src="https://jihulab.com/free163/9b9net/-/raw/e6bc35f51dbf4ce8bddb31c925f90b4c34c82111/computer/game.gif" width="50" height="50" border="0" id="index_r2_c6" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"></td>
+     <td width="20"></td>
+     <td align="center" width="60"></td>
+     <td width="20"></td>
+     <td align="center" width="60"></td>
+    </tr>
+    <tr>
+     <td align="center" width="60">我的电脑</td>
+     <td width="20"></td>
+     <td align="center" width="60">古典诗词</td>
+     <td width="20"></td>
+     <td align="center" width="60">在线音乐</td>
+     <td width="20"></td>
+     <td align="center" width="60">小游戏</td>
+     <td width="20"></td>
+     <td align="center" width="60"></td>
+     <td width="20"></td>
+     <td align="center" width="60"></td>
+     <td width="20"></td>
+     <td align="center" width="60"></td>
+     <td width="20"></td>
+    </tr>
+    <tr>
+     <td>&nbsp;</td>
+    </tr>
+    
+<!-- 第3行 -->
+    <tr>
+     <td align="center" width="60"><a href="http://www.book.ga/" target="_blank"><img name="wuxia" src="https://jihulab.com/free163/9b9net/-/raw/e6bc35f51dbf4ce8bddb31c925f90b4c34c82111/computer/wuxia.gif" width="50" height="50" border="0" id="index_r8_c6" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://www.free163.tk" target="_blank"><img name="down" src="https://jihulab.com/free163/9b9net/-/raw/e6bc35f51dbf4ce8bddb31c925f90b4c34c82111/computer/log.png" width="50" height="50" border="0" id="index_r11_c4" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://alist.2345.ltd" target="_blank"><img name="down" src="https://jihulab.com/free163/9b9net/-/raw/e6bc35f51dbf4ce8bddb31c925f90b4c34c82111/computer/aliyun.gif" width="50" height="50" border="0" id="index_r11_c4" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://kylehys.ysepan.com/" target="_blank"><img name="vip" src="https://jihulab.com/free163/9b9net/-/raw/e6bc35f51dbf4ce8bddb31c925f90b4c34c82111/computer/189.gif" width="50" height="50" border="0" id="index_r2_c6" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"></td>
+     <td width="20"></td>
+     <td align="center" width="60"></td>
+     <td width="20"></td>
+    </tr>
+    <tr>
+     <td align="center" width="60">武侠小说</td>
+     <td width="20"></td>
+     <td align="center" width="60">听松阁</td>
+     <td width="20"></td>
+     <td align="center" width="60">阿里云盘</td>
+     <td width="20"></td>
+     <td align="center" width="60">文件下载</td>
+     <td width="20"></td>
+     <td align="center" width="60"></td>
+     <td width="20"></td>
+     <td align="center" width="60"></td>
+     <td width="20"></td>
+     <td align="center" width="60"></td>
+     <td width="20"></td>
+    </tr>
+    <tr>
+     <td>&nbsp;</td>
+    </tr>
+    
+<!-- 第4行 -->
+    <tr>
+     <td align="center" width="60"><a href="http://skycz.com/" target="_blank"><img name="blog" src="https://jihulab.com/free163/9b9net/-/raw/e6bc35f51dbf4ce8bddb31c925f90b4c34c82111/computer/blog.gif" width="50" height="50" border="0" id="index_r11_c4" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://kylehao.ysepan.com/" target="_blank"><img name="share" src="https://jihulab.com/free163/9b9net/-/raw/e6bc35f51dbf4ce8bddb31c925f90b4c34c82111/computer/share.gif" width="50" height="50" border="0" id="index_r5_c4" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://www.mp4.run/" target="_blank"><img name="share" src="https://jihulab.com/free163/9b9net/-/raw/e6bc35f51dbf4ce8bddb31c925f90b4c34c82111/computer/zrzs.gif" width="50" height="50" border="0" id="index_r5_c4" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"></td>
+     <td width="20"></td>
+     <td align="center" width="60"></td>
+     <td width="20"></td>
+     <td align="center" width="60"></td>
+     <td width="20"></td>
+     <td align="center" width="60"></td>
+     <td width="20"></td>
+    </tr>
+   <tr>
+    <td align="center" width="60">我的博客</td>
+    <td width="20"></td>
+    <td align="center" width="60">文件分享</td>
+    <td width="20"></td>
+    <td align="center" width="60">精品音乐</td>
+    <td width="20"></td>
+    <td align="center" width="60"></td>
+    <td width="20"></td>
+    <td align="center" width="60"></td>
+    <td width="20"></td>
+    <td align="center" width="60"></td>
+    <td width="20"></td>
+    <td align="center" width="60"></td>
+    <td width="20"></td>
+   </tr>
+   <tr>
+    <td >&nbsp;</td>
+   </tr>
+<!-- 第5行 -->
+    <tr>
+     <td align="center" width="60"><a href="http://mail.pu.cx/" target="_blank"><img name="mail" src="https://jihulab.com/free163/9b9net/-/raw/e6bc35f51dbf4ce8bddb31c925f90b4c34c82111/computer/mail.gif" width="50" height="50" border="0" id="index_r11_c4" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="http://www.kkkk.info/" target="_blank"><img name="mail" src="https://jihulab.com/free163/9b9net/-/raw/e6bc35f51dbf4ce8bddb31c925f90b4c34c82111/computer/mi.png" width="50" height="50" border="0" id="index_r11_c4" alt="" /></a></td>
+     <td width="20"></td>
+     <td align="center" width="60"><a href="https://image.660000.xyz/" target="_blank"><img name="mail" src="https://jihulab.com/free163/9b9net/-/raw/e6bc35f51dbf4ce8bddb31c925f90b4c34c82111/computer/pictures.gif" width="50" height="50" border="0" id="index_r11_c4" alt="" /></td>
+     <td width="20"></td>
+     <td align="center" width="60"></td>
+     <td width="20"></td>
+     <td align="center" width="60"></td>
+     <td width="20"></td>
+     <td align="center" width="60"></td>
+     <td width="20"></td>
+     <td align="center" width="60"></td>
+     <td width="20"></td>
+    </tr>
+   <tr>
+    <td align="center" width="60">我的邮局</td>
+    <td width="20"></td>
+    <td align="center" width="60">我的米表</td>
+    <td width="20"></td>
+    <td align="center" width="60">我的图床</td>
+    <td width="20"></td>
+    <td align="center" width="60"></td>
+    <td width="20"></td>
+    <td align="center" width="60"></td>
+    <td width="20"></td>
+    <td align="center" width="60"></td>
+    <td width="20"></td>
+    <td align="center" width="60"></td>
+    <td width="20"></td>
+   </tr>
+   <tr>
+    <td >&nbsp;</td>
+   </tr>
+
+  </table>
+</div>
+
+
+
+</div>
+<!-- 代码 结束 -->
+
+	
+	<div id="wrapper1"></div><!-- Dockmenu build wrapper1 -->
+
+  </body>
+
+</html>

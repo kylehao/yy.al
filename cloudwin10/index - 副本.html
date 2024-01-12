@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>听松阁 WIN10-UI</title>
+    <link rel='Shortcut Icon' type='image/x-icon' href='./img/windows.ico'>
+    <script type="text/javascript" src="./js/jquery-2.2.4.min.js"></script>
+    <link href="./css/animate.css" rel="stylesheet">
+    <script type="text/javascript" src="./component/layer-v3.0.3/layer/layer.js"></script>
+    <link rel="stylesheet" href="./component/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="./css/default.css" rel="stylesheet">
+    <script type="text/javascript" src="./js/win10.js"></script>
+    <style>
+        * {
+            font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu
+        }
+
+        /*磁贴自定义样式*/
+         .win10-block-content-text {
+             line-height: 44px;
+             text-align: center;
+             font-size: 16px;
+         }
+    </style>
+    <script>
+        Win10.onReady(function () {
+
+            //设置壁纸
+            Win10.setBgUrl({
+                main: './img/wallpapers/main.jpg',
+                mobile: './img/wallpapers/mobile.jpg',
+            });
+
+            Win10.setAnimated([
+                'animated flip',
+                'animated bounceIn',
+            ], 0.01);
+        });
+    </script>
+</head>
+<body>
+<div id="win10">
+    <div class="desktop">
+        <div id="win10-shortcuts" class="shortcuts-hidden">
+		
+		
+            <div class="shortcut" onclick="Win10.openUrl('./index/index.html#18611bdd9a95775754883689b147e772','<img class=\'icon\' src=\'./img/icon/win10.png\'/>我的电脑')">
+                <img class="icon" src="./img/icon/win10.png"/>
+                <div class="title">我的电脑</div>
+            </div>
+            <div class="shortcut" onclick="Win10.openUrl('./index/index.html#baa2f715ac7db33da21682771b4fad81','<img class=\'icon\' src=\'./img/icon/blogger.png\'/>站长博客')">
+                <img class="icon" src="./img/icon/blogger.png"/>
+                <div class="title">站长博客</div>
+            </div>
+            <div class="shortcut" onclick="Win10.openUrl('./index/index.html#ab6eb4cc1d108e5fb0a8063ab7a7e439','<img class=\'icon\' src=\'./img/icon/doc.png\'/>古典诗词')">
+                <img class="icon" src="./img/icon/doc.png"/>
+                <div class="title">古典诗词</div>
+            </div>
+			<div class="shortcut" onclick="Win10.openUrl('./index/index.html#4a28e53bed44140810e65ca56dfd6e2e','<img class=\'icon\' src=\'./img/icon/doc.png\'/>美图/图库')">
+                <img class="icon" src="./img/icon/github.png"/>
+                <div class="title">美图/图库</div>
+            </div>
+            <div class="shortcut" onclick="Win10.openUrl('./index/index.html#a20a4b60ffe4f7fc9624c45f861283ea','<img class=\'icon\' src=\'./img/icon/kyzg.png\'/>音乐视听')">
+                <img class="icon" src="./img/icon/kyzg.png"/>
+                <div class="title">音乐视听</div>
+            </div>
+            <div class="shortcut" onclick='Win10.openUrl("./index/index.html#3d98877a486eb501214795ecc5f8dc88","<i class=\"fa fa-user icon black-green\"></i>小说赏阅")'>
+                <img class="icon" src="./img/icon/download.png"/>
+                <div class="title">小说赏阅</div>
+            </div>
+            <div class="shortcut" onclick='Win10.openUrl("./index/index.html#9c2232288caaa8ec40948cef6a786ac2","<i class=\"fa fa-user icon black-green\"></i>域名/邮局")'>
+                <i class="fa fa-user icon black-green"></i>
+                <div class="title">域名/邮局</div>
+            </div>
+            <div class="shortcut" onclick='Win10.openUrl("./index/index.html#9106596df2ab954b45b395ff63e55561","<i class=\"fa fa-user icon black-green\"></i>网站导航")'>
+                <i class="icon fa fa-fw fa-bank red" ></i>
+                <div class="title">网站导航</div>
+            </div>
+            <div class="shortcut" onclick='Win10.openUrl("./index/index.html#877a58ea5920542fc20b32632d1a796c","<i class=\"fa fa-user icon black-green\"></i>影音娱乐")'>
+                <i class="icon fa fa-fw fa-picture-o blue" ></i>
+                <div class="title">影音娱乐</div>
+            </div>
+            <div class="shortcut" onclick='Win10.openUrl("./index/index.html#639efe358da6d92fe483206548ac4c4b","<i class=\"fa fa-gears  icon purple\"></i>小工具")'>
+                <i class="fa fa-gears  icon purple"></i>
+                <div class="title">小工具</div>
+            </div>
+			
+			
+			
+			
+			
+			
+			<div class="shortcut" onclick='Win10.openUrl("https://www.9b9.net","<i class=\"fa fa-user icon black-green\"></i>听音乐")'>
+                <img class="icon" src="./img/icon/lxyy.gif"/>
+                <div class="title">听音乐</div>
+            </div>
+			<div class="shortcut" onclick='window.open("http://disk.660000.xyz/OneDrive/ampsnju/share/mtv/","<i class=\"fa fa-user icon black-green\"></i>音乐MV")'>
+                <img class="icon" src="./img/icon/facetime.png"/>
+                <div class="title">音乐MV</div>
+            </div>
+			<div class="shortcut" onclick='Win10.openUrl("https://dys.biz.ci/pc/","<i class=\"fa fa-user icon black-green\"></i>德云社")'>
+                <img class="icon" src="./img/icon/music.gif"/>
+                <div class="title">德云社</div>
+            </div>
+			<div class="shortcut" onclick='window.open("./index/index.html","<i class=\"fa fa-user icon black-green\"></i>网址导航")'>
+                <img class="icon" src="./img/icon/demo.png"/>
+                <div class="title">网址导航</div>
+            </div>
+			<div class="shortcut" onclick='window.open("http://blog.444.info/","<i class=\"fa fa-user icon black-green\"></i>博客")'>
+                <img class="icon" src="./img/icon/share.gif"/>
+                <div class="title">博客</div>
+            </div>
+			<div class="shortcut" onclick='Win10.openUrl("https://www.kkk.cx/","<i class=\"fa fa-user icon black-green\"></i>米表")'>
+                <img class="icon" src="./img/icon/mi.png"/>
+                <div class="title">米表</div>
+            </div>
+			<div class="shortcut" onclick='window.open("https://pic.yyyyy.ltd/","<i class=\"fa fa-user icon black-green\"></i>每日美图")'>
+                <img class="icon" src="./img/icon/pictures.gif"/>
+                <div class="title">每日美图</div>
+            </div>
+			<div class="shortcut" onclick='Win10.openUrl("https://www.jjj.cx/","<i class=\"fa fa-user icon black-green\"></i>武侠")'>
+                <img class="icon" src="./img/icon/book.gif"/>
+                <div class="title">武侠</div>
+            </div>
+			<div class="shortcut" onclick='Win10.openUrl("https://zhennue.com/","<i class=\"fa fa-user icon black-green\"></i>文学经典")'>
+                <img class="icon" src="./img/icon/wmcyy.gif"/>
+                <div class="title">文学经典</div>
+            </div>
+			<div class="shortcut" onclick='Win10.openUrl("https://free345.com/","<i class=\"fa fa-user icon black-green\"></i>资源分享")'>
+                <img class="icon" src="./img/icon/download.png"/>
+                <div class="title">资源分享</div>
+            </div>
+			<div class="shortcut" onclick='window.open("http://660000.xyz/","<i class=\"fa fa-user icon black-green\"></i>美图")'>
+                <img class="icon" src="./img/icon/photos.png"/>
+                <div class="title">美图</div>
+            </div>
+			<div class="shortcut" onclick='Win10.openUrl("https://bing.biz.ci/","<i class=\"fa fa-user icon black-green\"></i>Bing壁纸")'>
+                <img class="icon" src="./img/icon/passbook.png"/>
+                <div class="title">Bing壁纸</div>
+            </div>
+			<div class="shortcut" onclick='window.open("https://pic.bing.biz.ci/","<i class=\"fa fa-user icon black-green\"></i>随机壁纸")'>
+                <img class="icon" src="./img/icon/maps.png"/>
+                <div class="title">随机壁纸</div>
+            </div>
+        </div>
+        <div id="win10-desktop-scene"></div>
+    </div>
+    <div id="win10-menu" class="hidden">
+        <div class="list win10-menu-hidden animated animated-slideOutLeft">
+            <div class="item"
+                 onclick="Win10.exit()">
+                <i class="black icon fa fa-power-off fa-fw"></i><span class="title">关闭</span>
+            </div>
+        </div>
+        <div class="blocks">
+            <div class="menu_group">
+                <div class="title">Welcome</div>
+                <div class="block" loc="1,1" size="6,4">
+                     <div class="content" onclick="window.open('./index/')">
+					    <div style="font-size:100px;line-height: 132px;margin: 0 auto ;display: block"
+                             class="fa fa-fw fa-windows win10-block-content-text"></div>
+							
+                        <div class="win10-block-content-text" style="font-size: 22px">欢迎使用 Win10-UI</div>
+					
+                    </div>
+					
+                </div>
+            </div>
+        </div>
+		
+		
+		
+		
+        <div id="win10-menu-switcher"></div>
+    </div>
+    <div id="win10_command_center" class="hidden_right">
+        <div class="title">
+            <h4 style="float: left">消息中心 </h4>
+            <span id="win10_btn_command_center_clean_all">全部清除</span>
+        </div>
+        <div class="msgs"></div>
+    </div>
+    <div id="win10_task_bar">
+        <div id="win10_btn_group_left" class="btn_group">
+            <div id="win10_btn_win" class="btn"><span class="fa fa-windows"></span></div>
+            <div class="btn" id="win10-btn-browser"><span class="fa fa-internet-explorer"></span></div>
+        </div>
+        <div id="win10_btn_group_middle" class="btn_group"></div>
+        <div id="win10_btn_group_right" class="btn_group">
+            <div class="btn" id="win10_btn_time"></div>
+            <div class="btn" id="win10_btn_command"><span id="win10-msg-nof" class="fa fa-comment-o"></span></div>
+            <div class="btn" id="win10_btn_show_desktop"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
