@@ -3,9 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 <title>听松阁 - Free163.Com</title>
-<link rel='stylesheet' href='static/css/all.min.css'>
-<link rel="stylesheet" href="static/css/style.css">
-<link rel="stylesheet" href="static/css2/style.css">
+<link rel='stylesheet' href='./assets/home1/static/css/all.min.css'>
+<link rel="stylesheet" href="./assets/home1/static/css/style.css">
+<link rel="stylesheet" href="./assets/home1/static/css2/style.css">
 
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta http-equiv="refresh" content="60">
@@ -37,9 +37,69 @@
     <!--移动端识别结束-->
     <meta content="width=device-width, initial-scale=1" name="viewport">
  
-	<link rel="stylesheet" type="text/css" href="./assets/css/vno-mv.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="./assets/home1/css/vno-mv.css">
+    <link rel="stylesheet" type="text/css" href="./assets/home1/css/iconfont.css">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style type="text/css">
+			/*样式初始化*/
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			/*去除横向滚动条*/
+			body {
+				overflow-x: hidden;
+				overflow-y: hidden;
+				background-color: 000;
+				font-size:13px;
+				color: #ffffff;
+			}
+			/*将div铺满整个窗口*/
+			.box {
+				height: 100vh;
+				min-height: 520px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+background-color: 000;
+			}
+			/*设置大ul的大小及定位*/
+			.content {
+				position: relative;
+				width: 100%;
+				height: 100%;
+background-color: 000;
+			}
+			/*设置大li样式*/
+			.content li {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+			/*将第一张图片后的图片隐藏*/
+			#li1~li{display: none;}
+			/*设置大li背景图片*/
+			#li1 {background-image: url(./img/bg.jpg);background-size:100%;}
+			/*点击a标签,切换大图片*/
+			#li1:target,
+			#li2:target,
+			#li3:target,
+			#li4:target,
+			#li5:target,
+			#li6:target,
+			#li7:target,
+			#li8:target,
+			#li9:target,
+				display: block;
+			}
+			
+			
+		
+		</style>
 	<script>
         // JavaScript函数，用于刷新页面
         function refreshPage() {
@@ -55,13 +115,17 @@
 	
 					
 <div style="position:absolute; z-index:99; left: 0%; top: 0%;">
-                <header id="panel" class="panel-cover">
+	<span class="mobile btn-mobile-menu">
+        <i class="social iconfont icon-list btn-mobile-menu__icon"></i>
+        <i class="social iconfont icon-angleup btn-mobile-close__icon hidden"></i>
+    </span>
+        <header id="panel" class="panel-cover">
         <div class="panel-main" style="z-index:1;">
             <div class="panel-main__inner panel-inverted">
                 <div class="panel-main__content">
                     <div class="ih-item circle effect right_to_left">            
                         <a href="#" title="" class="blog-button">
-                            <div class="img"><img src="./assets/img/logo.png" alt="img" class="js-avatar iUp profilepic"></div>
+                            <div class="img"><img src="./assets/home1/img/logo.png" alt="img" class="js-avatar iUp profilepic"></div>
                             <div class="info iUp">
                                 <div class="info-back">
                                     <h2> 
@@ -147,13 +211,13 @@
                             <nav class="cover-navigation cover-navigation--primary">
 								<ul class="navigation">
                                     <li class="navigation__item">
-                                        <a href="index.html" class="blog-button">动态视频</a>
+                                        <a href="index-1-1.html" class="blog-button">动态视频</a>
                                     </li>
                                     <li class="navigation__item">
-                                        <a href="index-mv.html" class="blog-button">动画MV</a>
+                                        <a href="index-1-2.html" class="blog-button">动画MV</a>
                                     </li>
                                     <li class="navigation__item">
-                                        <a href="index-126.html" class="blog-button">随机壁纸</a>
+                                        <a href="index-1-3.html" class="blog-button">随机壁纸</a>
                                     </li>
 									&nbsp;&nbsp;&nbsp;
 									<li class="navigation__item">
@@ -167,7 +231,7 @@
 						<div>
 						    <nav class="cover-navigation cover-navigation--primary">
 								<ul class="navigation">
-                                    <span>Copyright @ 2005-2024 <a href="https://free163.com/" target="_blank">听松阁</a>  All Rights Reserved. Power By Github</span>
+                                   <span>Copyright @ 2005-2024 <a href="https://free163.com/" target="_blank">听松阁</a>  All Rights Reserved. Power By Github</span>
                                 </ul>
 <br>
 <script type="text/javascript"><!--
@@ -190,20 +254,20 @@ google_ad_channel ="";
          </div>
 		</div>
     </header>
-	<script type="text/javascript" src="./assets/js/main-mv.js"></script>
+	<script type="text/javascript" src="./assets/home1/js/main-mv.js"></script>
 </div>
 
 
-    <script src="./assets/images/jquery.min.js"></script>
-    <script src="./assets/images/main.js"></script>
-    <script src="./assets/images/bideo.js"></script>
-    <script src="./assets/images/morphext.min.js"></script>
+    <script src="./assets/home1/images/jquery.min.js"></script>
+    <script src="./assets/home1/images/main.js"></script>
+    <script src="./assets/home1/images/bideo.js"></script>
+    <script src="./assets/home1/images/morphext.min.js"></script>
 		
 		
 		
 <section class="showcase">
 	<div class="video-container">
-		<video src="https://api.rryyz.com/api/bg/url3.php" autoplay="" muted="" loop=""></video>
+		<video src="https://api.rryyz.com/api/bg/url.php" autoplay="" muted="" loop=""></video>
 	</div>
 </section>
 
